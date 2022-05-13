@@ -52,10 +52,11 @@ for i in range(len(ticks)):
     if tick[0] + tick[2]/2 < minWidth:
         if tick[1] < imgH/3 :
             addNucleus(i)
-            continue
-
     
-
+for i in range(len(ticks)):
+    for j in range(len(ticks)):
+        if not i == j:
+            
     
 print(type(contours[0]))
 cv2.imshow('sample', img1)
